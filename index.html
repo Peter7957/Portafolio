@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+<canvas id="canvas"></canvas>
+  <div class="contenedor">
+    <!-- Main donde estan el inicio, sobre mi y el contactame -->
+    <main class="main">
+      <nav class="navBar">
+        <ul>
+          <li><button id="btnInicio" class="btn">Inicio</button></li>
+          <li><button id="btnSobreMi" class="btn">Sobre mí</button></li>
+          <li><button id="btnContactame" class="btn">Contáctame</button></li>
+          <li><button id="btnTecnologiasHide" class="btn">Tecnologías</button></li>
+          <li><button id="btnProyectosHide" class="btn">Proyectos</button></li>
+        </ul>
+      </nav>
+      <div class="main-content">
+        <div class="body-main">
+          <div id="sectionInicio">
+            <h1>Pedro Cornejo</h1>
+            <p>Futuro Java Developer Full-Stack</p>
+          </div>
+          <section id="sectionSobreMi">
+            <h2>Sobre mí</h2>
+            <p>Constantemente trato de entender las bases de algún lenguaje para luego comprender los beneficios que estos ofrecen. Disfruto jugar videojuegos y leer novelas ligeras.
+            </p>
+            <hr>
+            <h3>Experiencia</h3>
+            <p>Actualmente me estoy enfocando en generar un portafolio donde pueda demostrar mis habilidades.</p>
+          </section>
+          <section id="sectionContactame">
+            <form action="#" id="form">
+              <h2>Contacto</h2>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+              <label for="email">Correo:</label>
+              <input type="email" id="email" name="email" placeholder="correo" required>
+              <label for="comentarios">Comentarios:</label>
+              <textarea name="comentarios" id="comentarios" required></textarea>
+              <button id="btnSubmit" class="btn btn-primary" type="submit" >Enviar</button>
+            </form>
+          </section>
+          <!-- seccion oculta -->
+
+            <div id="sectionTecnologiaHide">
+              <div class="item-tecnologiaHide">
+                <img src="assets/img/html.png" alt="imagen del logo de html">
+                <div class="shadowHide"></div>
+              </div>
+              <div class="item-tecnologiaHide">
+                <img src="assets/img/css.png" alt="imagen del logo de css">
+                <div class="shadowHide"></div>
+              </div>
+              <div class="item-tecnologiaHide">
+                <img src="assets/img/javascript.png" alt="imagen del logo de javascript">
+                <div class="shadowHide"></div>
+              </div>
+              <div class="item-tecnologiaHide">
+                <img src="assets/img/bootstrap.png" alt="imagen del logo de bootstrap">
+                <div class="shadowHide"></div>
+              </div>
+              <div class="item-tecnologiaHide">
+                <img src="assets/img/Jquery.png" alt="imagen del logo de jquery">
+                <div class="shadowHide"></div>
+              </div>
+            </div>
+
+            <div id="sectionProyectosHide">
+              <div class="item-proyectosHide">
+                <img src="https://www.ibrahima-ndaw.com/static/206f41062106147567f50d63ed9fd94d/8c557/app.png"
+                  class="card-img-top" alt="Pagina web de pokeapi">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                </div>
+                <button class="btnCard">Ver mas</button>
+              </div>
+              <div class="item-proyectosHide">
+                <img
+                  src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000059002/e2c326b8fbab42b3f48c86c10c728b8bc04cf59fa51302c54837823879e6749f"
+                  class="card-img-top" alt="Pagina web de vampire survivors">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                </div>
+                <button class="btnCard">Ver mas</button>
+              </div>
+              <div class="item-proyectosHide">
+                <img
+                  src="https://image.api.playstation.com/vulcan/ap/rnd/202402/1513/a62d52752d2ce64f41d0c531da03a059c69fba18f7f36ac9.jpg?w=440"
+                  class="card-img-top" alt="Pagina web de sea of thieves">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                </div>
+                <button class="btnCard">Ver mas</button>
+              </div>
+              <div class="item-proyectosHide">
+                <img
+                  src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/wiiu_download_software_5/SI_WiiUDS_TheBindingOfIsaacRebirth_image1600w.jpg"
+                  class="card-img-top" alt="Pagina web de sea of thieves">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                </div>
+                <button class="btnCard">Ver mas</button>
+              </div>
+            </div>
+        </div>
+
+        <aside class="aside-main">
+          <div class="asideInicio" id="asideInicio">
+            <img src="https://i.etsystatic.com/42065267/r/il/a90013/5011902847/il_fullxfull.5011902847_3owt.jpg" alt="" style="border-radius: 50%;">
+          </div>
+
+          <div class="asideSobreMi" id="asideSobreMi">
+            <p class="textComentario">"Representación de cómo me sentí al ver un compañero de igual nombre."</p>
+            <img src="assets/img/cool.png" alt="Imagen referente al meme 'daniel y cooler daniel'">
+            <p class="textComentario">"Soy el primero"</p>
+          </div>
+
+          <div class="asideContactame" id="asideContactame">
+            <img src="assets/img/contacto.png" alt="imagen referente a iconos de contacto">
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Aside donde se muestran los projectos y tecnologias -->
+    <aside class="border">
+      <ul>
+        <li><button id="btnTecnologias" class="btn">Tecnologías</button></li>
+        <li><button id="btnProyectos" class="btn">Proyectos</button></li>
+      </ul>
+
+      <div id="sectionTecnologia">
+        <div class="item-tecnologia">
+          <img src="assets/img/html.png" alt="imagen del logo de html">
+          <div class="shadow"></div>
+        </div>
+        <div class="item-tecnologia">
+          <img src="assets/img/css.png" alt="imagen del logo de css">
+          <div class="shadow"></div>
+        </div>
+        <div class="item-tecnologia">
+          <img src="assets/img/javascript.png" alt="imagen del logo de javascript">
+          <div class="shadow"></div>
+        </div>
+        <div class="item-tecnologia">
+          <img src="assets/img/bootstrap.png" alt="imagen del logo de bootstrap">
+          <div class="shadow"></div>
+        </div>
+        <div class="item-tecnologia">
+          <img src="assets/img/Jquery.png" alt="imagen del logo de jquery">
+          <div class="shadow"></div>
+        </div>
+      </div>
+
+      <div id="sectionProyectos">
+        <div class="item-proyectos">
+          <img src="https://www.ibrahima-ndaw.com/static/206f41062106147567f50d63ed9fd94d/8c557/app.png"
+            class="card-img-top" alt="Pagina web de pokeapi">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <button class="btnCard">Ver mas</button>
+        </div>
+        <div class="item-proyectos">
+          <img
+            src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000059002/e2c326b8fbab42b3f48c86c10c728b8bc04cf59fa51302c54837823879e6749f"
+            class="card-img-top" alt="Pagina web de vampire survivors">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <button class="btnCard">Ver mas</button>
+        </div>
+        <div class="item-proyectos">
+          <img
+            src="https://image.api.playstation.com/vulcan/ap/rnd/202402/1513/a62d52752d2ce64f41d0c531da03a059c69fba18f7f36ac9.jpg?w=440"
+            class="card-img-top" alt="Pagina web de sea of thieves">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <button class="btnCard">Ver mas</button>
+        </div>
+        <div class="item-proyectos">
+          <img
+            src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/wiiu_download_software_5/SI_WiiUDS_TheBindingOfIsaacRebirth_image1600w.jpg"
+            class="card-img-top" alt="Pagina web de sea of thieves">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <button class="btnCard">Ver mas</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/canvas.js"></script>
+
+</body>
+
+</html>

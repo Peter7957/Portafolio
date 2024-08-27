@@ -1,0 +1,324 @@
+/* Valores Globales */
+body{
+  margin: 0;
+  height: 100vh;
+  Background: linear-gradient(#1C2B33,#614A27);
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+}
+
+/* Valores de mi main */
+.main{
+  background-color: #CEC99D;
+  width: 1140px;
+  height: 80vh;
+  margin: auto 30px;
+  display: block;
+  /* border: 5px groove; */
+  border-radius: 50% 0;
+}
+
+.navbar{
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-content{
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+  /* preparando en navBar */
+  ul{
+    list-style: none;
+    display: flex;
+  }
+  /* .navBar{
+    border-bottom: 3px solid;
+  } */
+
+  .navBar ul{
+    justify-content: end;
+  }
+
+  /* preparando el cuerpo del main */
+  .body-main{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  #sectionInicio{
+    padding: 100px;
+  }
+
+  #sectionSobreMi{
+    display: none;
+    padding: 100px;
+    
+
+  }
+
+  #sectionContactame{
+    display: none;
+    margin: 0 auto;
+  }
+
+  .aside-main{
+    width: 30%;
+    height: 80%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #asideInicio img, #asideSobreMi img{
+    width: 90%;
+  }
+
+
+  #asideSobreMi img{
+    /* margin-top: 50px; */
+  }
+
+  #asideSobreMi, #asideContactame, #sectionTecnologiaHide, #sectionProyectosHide{
+    display: none;
+  }
+
+  #asideContactame img{
+    margin-top: 50px;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  #btnTecnologiasHide, #btnProyectosHide{
+    display: none;
+  }
+
+  #sectionTecnologiaHide, #sectionProyectosHide{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #sectionTecnologiaHide .item-tecnologiaHide, #sectionProyectosHide .item-proyectosHide{
+    width: 150px;
+    height: 150px;
+    margin: 1rem;
+  }
+
+  #sectionTecnologiaHide .item-tecnologiaHide img, #sectionProyectosHide .item-proyectosHide img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .shadowHide{
+    background-color: black;
+    height: 15px;
+    width: 150px;
+    opacity: 0.3;
+    border-radius: 50%;
+  }
+
+/* Codigo de mi aside */
+.border ul{
+  justify-content: center;
+}
+
+
+.border{
+  background-color: #767447;
+  width: 400px;
+  height: 100vh;
+
+}
+
+#sectionTecnologia, #sectionProyectos{
+  max-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+
+
+.item-proyectos img{
+  width: 100%;
+  height: 55%;
+  padding: 8px;
+  border-radius: 28px;
+}
+
+#sectionTecnologia::-webkit-scrollbar, #sectionProyectos::-webkit-scrollbar{
+  width: 0;
+}
+
+#sectionTecnologia .item-tecnologia, #sectionProyectos .item-proyectos{
+  margin: 8px auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000000;
+  /* line-height: 308px; */
+  display: block;
+  text-align: center;
+  border-radius: 10%;
+}
+
+
+.item-tecnologia{
+
+  background-color: rgba(0, 255, 255, 0.3);
+
+}  
+ 
+
+.item-tecnologia img{
+  margin-top: 1rem;
+  z-index: 1;
+  filter: none;
+
+}
+
+#sectionProyectos{
+  display: none;
+}
+
+.item-proyectos{
+  background-color: #A6AC85;
+}
+
+.shadow{
+  background-color: black;
+  width: 250px;
+  height: 20px;
+  opacity: 0.3;
+  border-radius: 50%;
+  margin: 0 auto;
+  
+}
+
+.btn{
+  background-color: transparent;
+  border: 0;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+}
+
+.btn:hover{
+  background-color: #767447;
+  opacity: 0.3;
+}
+
+.btnCard{
+  margin-top: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  background-color: cornflowerblue;
+}
+
+/* mejorando el formulario */
+#form{
+  width: 30vw;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#form label{
+  margin-left: 5px;
+}
+
+#form input{
+  margin: 5px;
+  padding: 5px;
+}
+
+#form textarea{
+  margin: 5px;
+  resize: none;
+}
+
+#form button{
+  width: 50%; 
+  margin: 15px auto;
+
+}
+
+canvas{
+  position: fixed;
+  z-index: -1;
+}
+
+.textComentario{
+  color: grey;
+  font-size: small;
+  width: 80%;
+  margin: auto;
+  font-style: italic;
+  padding: 5px;
+}
+
+@media(max-width: 1200px){
+  .border{
+    display: none;
+  }
+
+  .main{
+    width: 90%;
+    border-radius: 5%;
+    display: block;
+    margin: 2rem;
+  }
+
+  #sectionContactame, #form{
+    /* padding: auto; */
+    width: 90%;
+  }
+
+  #sectionInicio, #sectionSobreMi{
+    width: 90%;
+    padding: 20px;
+  }
+
+  #btnTecnologiasHide, #btnProyectosHide{
+    display: block;
+  }
+
+
+}
+
+@media (max-width: 600px){
+  
+  .main-content{
+    width: 100vw;
+    display: block;
+  }
+
+  .body-main, .aside-main{
+    display: flex;
+    width: 100%;
+
+  }
+
+  .aside-main{
+    display: none;
+  }
+
+  .body-main{
+    overflow-y: auto;
+
+  }
+
+  #sectionProyectosHide .item-proyectosHide{
+    margin: 7rem 2rem;
+  }
+}
